@@ -1,0 +1,189 @@
+/* ==========================================================================
+   1. IMPORTAÇÃO DE FONTES E CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Efeito de rolagem suave ao clicar no menu */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #4A4A4A; /* Cinza escuro suave, mais elegante que o preto puro */
+    background-color: #FAFAFA; /* Fundo off-white */
+}
+
+/* ==========================================================================
+   2. TIPOGRAFIA E TÍTULOS (Estilo Carol Muniz)
+   ========================================================================== */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #2C3E35; /* Verde-escuro sálvia/petróleo, transmite calma e seriedade */
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Linha sutil abaixo dos títulos */
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 1px;
+    background-color: #B8977E; /* Tom bronze/nude para contraste elegante */
+}
+
+/* ==========================================================================
+   3. CABEÇALHO E MENU
+   ========================================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #B8977E;
+}
+
+/* ==========================================================================
+   4. SEÇÕES E LAYOUT (Espaçamento Minimalista)
+   ========================================================================== */
+section {
+    padding: 6rem 10%; /* Bastante espaço nas laterais e entre seções */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seção de Início (Dobra Principal) */
+#inicio {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #F4F1EA; /* Fundo areia bem suave */
+    width: 100%;
+    max-width: 100%;
+    padding-left: 10%;
+}
+
+#inicio h2 {
+    font-size: 3rem;
+    line-height: 1.3;
+    max-width: 700px;
+    border: none; /* Remove a linha do H2 nesta seção */
+}
+
+#inicio h2::after { display: none; }
+
+#inicio p {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 2.5rem 0;
+    color: #7A7A7A;
+    max-width: 600px;
+}
+
+/* O Botão de Destaque */
+.botao {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #2C3E35;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    border: 1px solid #2C3E35;
+}
+
+.botao:hover {
+    background-color: transparent;
+    color: #2C3E35;
+}
+
+/* Seção Sobre Mim (Ideal para colocar foto e texto lado a lado) */
+#sobre {
+    background-color: #FFFFFF;
+}
+
+/* Seção de Contato */
+#contato {
+    background-color: #F4F1EA;
+    text-align: center;
+}
+
+#contato h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#contato p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   5. RESPONSIVIDADE (Para Celulares)
+   ========================================================================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    nav a {
+        margin: 0 0.7rem;
+    }
+
+    section {
+        padding: 4rem 5%;
+    }
+
+    #inicio h2 {
+        font-size: 2.2rem;
+    }
+}
