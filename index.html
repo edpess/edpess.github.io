@@ -6,6 +6,128 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+        <!-- CSS Injetado para replicar as cores das imagens -->
+        <style>
+            /* Fundo geral (Gradiente Roxo para Vinho) */
+            body {
+                background: linear-gradient(135deg, #4f3170 0%, #7e2439 100%) !important;
+                background-attachment: fixed !important;
+                color: #a0a0a0;
+            }
+
+            /* Container Principal (Fundo Escuro) */
+            #main {
+                background-color: #1a1a1a !important;
+                color: #a0a0a0 !important;
+            }
+            #main h1, #main h2, #main h3, #main strong {
+                color: #ffffff !important;
+            }
+
+            /* Barra de Navegação */
+            #nav {
+                background-color: #151515 !important;
+                border-bottom: 1px solid #333333 !important;
+            }
+            #nav ul li a {
+                color: #777777 !important;
+            }
+            #nav ul li a.active {
+                color: #ffffff !important;
+                background-color: #1a1a1a !important;
+            }
+
+            /* Cores dos Ícones Circulares (Seção Know-how) */
+            .features li .icon {
+                border-color: #333333 !important;
+                background-color: transparent !important;
+            }
+            .features li .icon:before {
+                text-shadow: none !important;
+            }
+            .features li .icon.style1 { color: #eea09b !important; } /* Rosa Claro / Salmão */
+            .features li .icon.style2 { color: #d09cc7 !important; } /* Rosa/Lilás */
+            .features li .icon.style3 { color: #a18ac2 !important; } /* Roxo Claro */
+            .features li .icon.style4 { color: #85b6de !important; } /* Azul Claro */
+            .features li .icon.style5 { color: #6db1d3 !important; } /* Azul Ciano */
+
+            /* Cores dos Blocos (Seção Métricas & Governança) */
+            .statistics {
+                border: none !important;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 !important;
+                padding: 0 !important;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            .statistics li {
+                border: none !important;
+                color: #ffffff !important;
+                flex: 1;
+                min-width: 150px; /* Garante que os blocos fiquem bem no mobile */
+                padding: 3em 1.5em !important;
+            }
+            .statistics li .icon {
+                color: #ffffff !important;
+                margin-bottom: 0.5em;
+            }
+            .statistics li strong {
+                color: #ffffff !important;
+            }
+            /* Cores específicas de cada bloco baseado na imagem */
+            .statistics li.style1 { background-color: #6d1b22 !important; } /* Vermelho/Vinho */
+            .statistics li.style2 { background-color: #603a5f !important; } /* Roxo Escuro */
+            .statistics li.style3 { background-color: #4a416e !important; } /* Anil / Violeta */
+            .statistics li.style4 { background-color: #294c72 !important; } /* Azul Royal */
+            .statistics li.style5 { background-color: #165373 !important; } /* Azul Petróleo */
+
+            /* Botão Primário (Azul) e Botões Padrão */
+            .button.primary {
+                background-color: #165373 !important;
+                color: #ffffff !important;
+                box-shadow: none !important;
+            }
+            .button.primary:hover {
+                background-color: #1c6a94 !important;
+            }
+            .button {
+                border-color: #444 !important;
+                color: #ccc !important;
+            }
+            .button:hover {
+                background-color: #333 !important;
+                color: #fff !important;
+            }
+
+            /* Cabeçalho, Rodapé e Linhas Separadoras */
+            header.major:after, section.special:after {
+                border-color: #333333 !important;
+            }
+            #header, #footer {
+                color: #cccccc !important;
+            }
+            #header h1, #footer h2 {
+                color: #ffffff !important;
+            }
+            #footer p, #footer dl dt, #footer dl dd {
+                color: #aaaaaa !important;
+            }
+            #footer a, #header a {
+                color: #aaaaaa !important;
+                border-bottom-color: transparent !important;
+            }
+            #footer a:hover, #header a:hover {
+                color: #ffffff !important;
+            }
+
+            /* Bordas da imagem de perfil */
+            .spotlight .image img {
+                border: 1px solid #333;
+            }
+        </style>
+
     </head>
     <body class="is-preload">
 
