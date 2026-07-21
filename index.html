@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-        <!-- CSS Injetado para replicar as cores das imagens -->
-        <style>
+                <!-- CSS Injetado para replicar as cores das imagens -->
+                <style>
             /* Fundo geral (Gradiente Roxo para Vinho) */
             body {
                 background: linear-gradient(135deg, #4f3170 0%, #7e2439 100%) !important;
@@ -125,6 +125,30 @@
             /* Bordas da imagem de perfil */
             .spotlight .image img {
                 border: 1px solid #333;
+            }
+
+            /* Correção para os círculos dos ícones do rodapé completarem */
+            #footer .icons li {
+                display: inline-block !important;
+                margin: 0 0.5em !important;
+            }
+            #footer .icons li a.icon.alt {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                width: 2.5em !important;
+                height: 2.5em !important;
+                line-height: 1 !important;
+                border-radius: 50% !important;
+                border: 1px solid #aaaaaa !important;
+                box-sizing: border-box !important;
+                text-decoration: none !important;
+            }
+            #footer .icons li a.icon.alt:hover {
+                border-color: #ffffff !important;
+            }
+            #footer .icons li a.icon.alt span {
+                display: none !important; /* Garante que o texto de acessibilidade fique oculto para não quebrar o layout */
             }
         </style>
 
